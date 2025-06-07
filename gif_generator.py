@@ -24,7 +24,7 @@ def generate_gif(input_folder, output_path, duration=0.5,size=(300,300)):
             img=Image.open(path).convert("RGB")
             img = img.resize(size)
             
-            # labelling in image
+            # labelling image
            ''' draw = ImageDraw.Draw(img)
             draw.text((10,10),f'Frame {len(frames)+1}', fill=(255,255,255))
             # No grayscale, no alpha channel, no mismatches → no error'''
